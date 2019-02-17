@@ -1,0 +1,73 @@
+<!DOCTYPE> 
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Startpage</title>
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
+</head>
+<body>
+    <img src="assets/rubyrose.png">
+    <div id="container">
+        <div id="blocked">
+            <div id="logo">ヴィンセント</div> TRI HO	
+            <div id="dial">
+                <table>
+                    <tr>
+                        <td>school</td>
+                        <td arr>»</td>
+                        <td lnk><a target="_blank" href="https://classroom.google.com/u/3/h">gc</a></td>
+                        <td lnk><a target="_blank" href="https://aw.tdsb.on.ca/sites/ln02/martingroveci/">aw</a></td>
+                        <td lnk><a target="_blank" href="https://calendar.google.com/calendar/b/1/r/month/">calendar</a></td>
+                        <td lnk><a target="_blank" href="https://app.myblueprint.ca/">blueprint</a></td>
+                    </tr>
+                    <tr>
+                        <td>social</td>
+                        <td arr>»</td>
+                        <td lnk><a target="_blank" href="https://messenger.com">fb</a></td>
+                        <td lnk><a target="_blank" href="https://mail.google.com/mail/u/1/#inbox">gmail</a></td>
+                        <td lnk><a target="_blank" href="https://mail.google.com/mail/u/3/">tdsb</a></td>
+                        <td lnk><a target="_blank" href="https://reddit.com">reddit</a></td>
+                    </tr>
+                    <tr>
+                        <td>others</td>
+                        <td arr>»</td>
+                        <td lnk><a target="_blank" href="https://www.twitch.tv/directory/following">twitch</a></td>
+                        <td lnk><a target="_blank" href="https://drive.google.com/drive/u/1/my-drive">drive</a></td>
+                        <td lnk><a target="_blank" href="https://docs.google.com/document/u/1/">docs</a></td>
+                        <td lnk><a target="_blank" href="http://youtube.com">yt</a></td>
+                    </tr>
+                </table>
+            </div>
+            <div class="search">
+                <form method="get" action="https://www.google.com/search">
+                    <input name="q" type="text" placeholder="Google" />
+                </form>
+            </div>
+        </div>
+<script type="text/javascript" src="assets/jquery.min.js"></script>
+<script type="text/javascript">
+var cl = function() {
+	var ca = ["#ed8c9a", "#f98d77", "#ffcb69", "#ffe269", "#fffa85"];
+	$("td[lnk]").each(function(){
+		var r = ca[~~(Math.random() * ca.length)];
+		$(this).css("background-color", r);
+	});
+};
+var rl = function(){
+	var l = $('#logo');
+	var cr = l.text().split("");
+	l.empty();
+	$.each(cr, function (i, e) {
+	    l.append('<span>' + e + '</span>');
+	});
+}
+$(function(){
+	var a = setInterval(cl,500);
+	var b = rl();
+});
+</script>
+
+</body>
+
+</html>
+
