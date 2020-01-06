@@ -381,6 +381,10 @@ body {
 #tabs ul li[active]:nth-child(3) ~ li:last-child {
     --flavour: #5b52e4;
 }
+#panels ul:nth-child(4),
+#tabs ul li[active]:nth-child(4) ~ li:last-child {
+    --flavour: #e4ac52;
+}
 
 #panels ul .links {
     box-shadow: inset -1px 0 var(--flavour);
