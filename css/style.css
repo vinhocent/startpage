@@ -347,6 +347,7 @@ body {
 
 #tabs ul li[active]:nth-child(2) ~ li:last-child { margin: 0 0 0 35px; }
 #tabs ul li[active]:nth-child(3) ~ li:last-child { margin: 0 0 0 70px; }
+#tabs ul li[active]:nth-child(4) ~ li:last-child { margin: 0 0 0 105px; }
 
 #panels {
     overflow: hidden;
