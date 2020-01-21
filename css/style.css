@@ -450,7 +450,7 @@ body {
     flex-wrap: wrap;
 }
 
-#panels > ul:first-child .links a {
+#panels > ul:nth-child(1) .links a {
     color: #bfbfbf;   
     text-decoration: none;
     font: 700 18px '', monospace; /* 'Roboto', sans-serif; */
@@ -462,6 +462,7 @@ body {
     border-radius: 2px;
     margin-bottom: .7em;
 }
+
 
 #panels > ul:first-child .links a:not(:last-child) { margin-right: .3em }
 
