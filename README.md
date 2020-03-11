@@ -1,3 +1,3 @@
 startpage
 
-use your arrowkeys to switch pages 
+use your number keys to switch pages 
