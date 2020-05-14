@@ -1,0 +1,111 @@
+@import url('iosevka/iosevka.css');
+
+body {
+	font-family: 'Iosevka', monospace;
+    background-color: rgb(0, 0, 0);
+}
+
+#parent {
+	position: absolute;
+	margin: auto;
+
+	top: 0; bottom: 6vh;
+	left: 0; right: 0;
+
+	width: 270px;
+	height: 480px;
+
+	text-align: right;
+
+}
+
+#links {
+	
+	background: rgba(0,0,0,0);
+
+	width: 270px;
+	height: 480px;
+
+	transition: 0.2s ease;
+
+	overflow: ;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	z-index: 1;
+}
+
+#avatar {
+	width: 270px;
+	height: 480px;
+	position: absolute;
+
+	display: block;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+
+	z-index: 2;
+}
+
+#avatar:hover ~ #links{
+	width: 512px;
+}
+
+#links:hover {
+	width: 512px;
+}
+
+a {
+	opacity: 0.7;
+	text-decoration: none;
+	transition: 0.2s;
+	color: #fff;
+}
+
+a:hover {
+	opacity: 1;
+}
+
+ul {
+	display: block;
+
+	text-align: right;
+
+	list-style-type: none;
+
+	padding-top: 1em;
+    padding-left: 1em;
+    padding-right: 3em;
+
+    color: #26a69a;
+}
+
+.bg {
+	position: fixed;
+	left: 0;
+	right: 0;
+	z-index: -2;
+
+	background-image: url('images/bg.jpg');
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+
+	filter: blur(5px) saturate(0.8);
+
+	transform: scale(1.1);
+}
+
+#search {
+	font-family: 'Iosevka';
+	position: relative;
+	left: 0; top: 12px;
+	color: white;
+}
+
+.searchbar {
+	background: rgb(46,46,46);
+	font-family: 'Iosevka', monospace; font-size: 14px;
+	width: 270px; height: 22px;
+	border: 0px;
+	color: rgba(255,255,255,0.7);
+
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
